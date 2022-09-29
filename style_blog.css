@@ -1,13 +1,43 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
+html, body {
     background-color: lightblue;
+    height: 100%;
 }
 
 h1 {
     color: darkslateblue;
     text-align: center;
+    font-family: 'Nunito', serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+h3 {
+    color: darkslateblue;
+    text-align: center;
+    font-family: 'Nunito', serif;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 p {
     font-family: verdana, serif;
     font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  height: 50%;
+  width: 50%;
 }
