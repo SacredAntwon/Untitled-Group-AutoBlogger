@@ -26,18 +26,14 @@ p {
     font-size: 20px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: pink;
-  height: 50%;
+.boxed {
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+  height: 200px;
   width: 50%;
+  border: 2px
+  solid darkslateblue ;
+  background-color: black;
+  color: white;
 }
