@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "python-shell": "^3.0.1"
+  },
+  "name": "untitled-group-autoblogger",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SacredAntwon/Untitled-Group-AutoBlogger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SacredAntwon/Untitled-Group-AutoBlogger/issues"
+  },
+  "homepage": "https://github.com/SacredAntwon/Untitled-Group-AutoBlogger#readme"
+}
