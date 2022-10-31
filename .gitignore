@@ -102,10 +102,13 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+
+.node_modules
 .env
 .venv
 env/
 venv/
+node_modules/
 ENV/
 env.bak/
 venv.bak/
@@ -120,6 +123,15 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
 # mypy
 .mypy_cache/
 .dmypy.json
@@ -127,3 +139,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.DS_Store

@@ -1,0 +1,5 @@
+These are the packages installed using npm
+
+npm install python-shell --save
+npm install express --save
+npm install ejs --save
