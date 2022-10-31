@@ -22,5 +22,5 @@ data = {
     "author-email": gen.email()
 }
 
-with open(f"article_{date}_{time}.json", "w") as outfile:
+with open(f"archive/article_{date}.json", "w") as outfile:
     json.dump(data, outfile)
