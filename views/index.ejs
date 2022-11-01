@@ -1,3 +1,27 @@
-<%- include('partial/_header.ejs'); -%>
-
-<%- include ('partial/_footer'); -%>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <style>
+  .square {
+    height: 500px;
+    width: 500px;
+    background-color: #555;
+  }
+  </style>
+  <body style="background-color: lightblue">
+    <main>
+        <button type="button" class = "button">Archive</button>
+        <h1>AutoBlogger</h1>
+        <h3>The Daily Blogger, No Human Required</h3>
+        <script src="index.js"></script>
+        <div class="boxed" id="test" id = "list"></div>
+    </main>
+  </body>
+</html>

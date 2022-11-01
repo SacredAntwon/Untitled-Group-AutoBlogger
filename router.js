@@ -3,7 +3,7 @@ var express = require("express");
 var router = express.Router();
 
 const blogInfo = require('./genPytoJs');
-console.log(blogInfo.author);
+console.log(blogInfo);
 
 // router.get('', async(req,res) => {
 //   res.render('index', { blog : blogInfo.author });
