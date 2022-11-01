@@ -22,7 +22,7 @@ word = gen.word()
 
 article = ''
 
-for i in range(random.randrange(3,9)):
+for i in range(random.randrange(7,12)):
     article += gen.paragraph() + '\n'
 
 data = {
