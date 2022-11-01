@@ -3,12 +3,12 @@ import express from "express";
 
 export default function startRouter() {
   const router = express.Router();
-  checkArticle()
+  checkArticle();
 
   router.get("/", function (req, res) {
-    let blogInfo = getBlogPost()
+    let blogInfo = getBlogPost();
     console.log("Start page");
-    res.render("index", {text: blogInfo.article});
+    res.render("index", {text: blogInfo.article, picture : blogInfo.image });
   });
   return router
 }
