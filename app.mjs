@@ -1,11 +1,12 @@
-var express = require("express");
-var path = require("path");
+import express from "express";
+import path from "path";
+import {fileURLToPath} from 'url';
+import startRouter from "./router.mjs";
 
-var routes = require("./router");
+const app = express();
+const __filename = fileURLToPath(import.meta.url);
 
-var app = express();
-
-
+const __dirname = path.dirname(__filename);
 
 app.set("port", process.env.PORT || 3000);
 
@@ -15,7 +16,9 @@ app.use("/img", express.static(__dirname + "/public/img"));
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs")
 
-app.use(routes);
+let router = startRouter()
+
+app.use(router);
 
 app.listen(app.get("port"),function(){
   console.log("Server started on port " + app.get("port"))

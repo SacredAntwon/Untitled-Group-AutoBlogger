@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
 
-body { background-color: lightblue;}
+html, body {
+    background-color: lightblue;
+    height: 100%;
+}
 
 h1 {
     color: darkslateblue;
@@ -39,7 +42,7 @@ p {
 
 .boxed {
   /*display: flex;*/
-  align-items: top;
+  align-items: start;
   /*text-align: left;*/
   justify-items: left;
   margin: auto;
