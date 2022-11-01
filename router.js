@@ -10,7 +10,7 @@ console.log(blogInfo);
 // });
 router.get("/",function(req,res){
   console.log("Start page");
-  res.render("index");
+  res.render("index", { text : blogInfo.article });
 });
 
 module.exports = router;
