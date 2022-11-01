@@ -23,4 +23,3 @@ export function getBlogPost() {
         return JSON.parse(rawData);
     }
 }
-
