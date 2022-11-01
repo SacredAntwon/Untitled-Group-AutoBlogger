@@ -28,7 +28,7 @@ PythonShell.run("gen.py",null,function(err,results){
 //     module.exports = { blogInfo : 'blogInfo' };
 // })
 
-let rawdata = fs.readFileSync('./archive/article_2022-11-01.json');
+let rawdata = fs.readFileSync('./archive/article_10_31_2022.json');
 let blogInfo = JSON.parse(rawdata);
 //console.log(blogInfo);
 
