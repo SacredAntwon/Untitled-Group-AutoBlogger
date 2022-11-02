@@ -16,7 +16,7 @@ We are using python and many libraries to generate the blog and gather images. N
 ## Getting Started
 1. Node JS needs to be installed (https://nodejs.org/en/).
 
-2.There are two text files, `npm_requirements.txt` for Node JS and `requirements.txt` for python. These include all libraries required to run the website and generator.
+2. There are two text files, `npm_requirements.txt` for Node JS and `requirements.txt` for python. These include all libraries required to run the website and generator.
 
 3. There are two methods to start the website. First option that will require no changes to the json is `node app.mjs`. The other method is to do `npm start` in the terminal if you have `"start": "node app.mjs"` in the `package.json` file under the `"scripts"`.
 
