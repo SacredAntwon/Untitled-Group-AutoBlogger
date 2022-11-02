@@ -8,7 +8,7 @@ export default function startRouter() {
   router.get("/", function (req, res) {
     let blogInfo = getBlogPost();
     console.log("Start page");
-    res.render("index", {text: blogInfo.article, picture : blogInfo.image });
+    res.render("index", { blog : blogInfo, picture : blogInfo.image });
   });
   return router
 }

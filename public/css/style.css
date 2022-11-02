@@ -40,13 +40,27 @@ p {
   border-radius: 10px;
 }
 
+.titleboxed {
+  text-align: center;
+  font-size: 22px;
+  margin: auto;
+  font-family: verdana, serif;
+  border-radius: 10px 10px 0px 0px;
+  padding: 2rem;
+  height: 3rem;
+  width: 80%;
+  border: 2px solid darkslateblue ;
+  background-color: black;
+  color: white;
+}
+
 .boxed {
   /*display: flex;*/
   align-items: start;
   /*text-align: left;*/
   justify-items: left;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   padding: 2rem;
   height: 80rem;
   width: 80%;

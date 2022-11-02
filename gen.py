@@ -19,18 +19,20 @@ date = fullDate.strftime("%m_%-d_%Y")
 time = fullDate.strftime("%H:%M")
 
 word = gen.word()
+title = gen.sentence()
 
 article = ''
 
-for i in range(random.randrange(10,12)):
-    article += gen.paragraph() + '\n'
+for i in range(7):
+    article += gen.paragraph() + ' '
 
 data = {
     "date": str(fullDate.strftime("%m/%d/%Y")),
     "time": str(time),
-    "article": article,
-    "author": gen.name(),
-    "author-email": gen.email(),
+    "article": str(article),
+    "title": str(title),
+    "author": str(gen.name()),
+    "email": str(gen.email()),
     "image": ('img/'+word+'/'+word+'_9.jpg')
 }
 
