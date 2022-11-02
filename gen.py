@@ -33,7 +33,7 @@ data = {
     "title": str(title),
     "author": str(gen.name()),
     "email": str(gen.email()),
-    "image": ('img/'+word+'/'+word+'_9.jpg')
+    "image": ('img/'+word+'/'+word+'_8.jpg')
 }
 
 with open(f"archive/article_{date}.json", "w") as outfile:
