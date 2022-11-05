@@ -8,10 +8,11 @@ Anthony Maida
 amaida@csu.fullerton.edu
 
 Author 2:
-Daniel
+Daniel VanDenEykel
+d.vandeneykel@csu.fullerton.edu
 
 ## Information
-We are using python and many libraries to generate the blog and gather images. Node JS and express is used to build the website. The JavaScript code will check what the current day is, and if there is no blog with the current date, it will call the `gen.py` to create a new blog. If you would like to test the generatation of the blog, run `python3 gen.py`.
+We are using python and many libraries to generate the blog and gather images. Node JS and express is used to build the website. The JavaScript code will check what the current day is, and if there is no blog with the current date, it will call the `gen.py` to create a new blog. If you would like to test the generatation of the blog, run `python3 gen.py`. `pip install -r requirements.txt`(if pip does not work, try using pip3) could be used to install the python libraries.
 
 ## Getting Started
 1. Node JS needs to be installed (https://nodejs.org/en/).
