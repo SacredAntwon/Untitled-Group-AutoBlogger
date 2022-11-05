@@ -9,24 +9,19 @@
   <body>
     <main>
         <li class="nav-item" style="list-style-type: none;">
-          <a class="button" href="/archive" class="nav-link px-2">
-            Archive
+          <a class="button" href="/">
+            Home
           </a>
         </li>
         <h1>AutoBlogger</h1>
         <h3>The Daily Blogger, No Human Required</h3>
-        <h4 class="titleboxed">
-          <%= blog.title %><br>
-          Date:
-          <%= blog.date %><br>
-        </h4>
         <p class="boxed">
-          <img src="<%= picture %>" alt="No image" style="float: right;" width="405" height="250">
-          <%= blog.article %> <br><br><br>
-          Author:
-          <%= blog.author %><br>
-          Email:
-          <%= blog.email %>
+          ARCHIVE PAGE <br> <br>
+          <% file.forEach(element => { %>
+            <a class="nav-item" href="/">
+              <%= element %>
+            </a> <br> <br>
+          <% }); %>
         </p>
     </main>
   </body>
