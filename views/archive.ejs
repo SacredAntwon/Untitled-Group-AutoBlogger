@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBlogger</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <main>
+        <li class="nav-item" style="list-style-type: none;">
+          <a class="button" href="/">
+            Home
+          </a>
+        </li>
+        <h1>AutoBlogger</h1>
+        <h3>The Daily Blogger, No Human Required</h3>
+        <p class="boxed" style="border-radius:10px;">
+          ARCHIVE PAGE <br> <br>
+          <% file.forEach(element => { %>
+            <a class="nav-item" href="/">
+              <%= element %>
+            </a> <br> <br>
+          <% }); %>
+        </p>
+    </main>
+  </body>
+</html>

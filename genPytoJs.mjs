@@ -23,3 +23,14 @@ export function getBlogPost() {
         return JSON.parse(rawData);
     }
 }
+
+// This will grab the list of files names from 'archive'
+export function listFiles() {
+    var files = fs.readdirSync('./archive');
+    const index = files.indexOf('.DS_Store');
+    // Removes DS_Store from the list
+    if (index > -1) {
+      files.splice(index, 1);
+    }
+    return files;
+}
