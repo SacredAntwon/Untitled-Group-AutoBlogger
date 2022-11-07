@@ -15,17 +15,15 @@
     </li>
     <h1>AutoBlogger</h1>
     <h3>The Daily Blogger, No Human Required</h3>
-    <p class="boxed" style="border-radius:10px;">
-        ARCHIVE PAGE <br> <br>
-        <form action="/" method="get">
-        <% file.forEach(element => { %>
-        <button name='post' type='submit' value='<%= element %>'>
-            <%= element %>
-        </button>
-            <br> <br>
-        <% }); %>
-        </form>
-    </p>
+    <h2>Archive Page</h2>
+    <form class="boxed" style="border-radius:10px;" action="/" method="get">
+    <% file.forEach(element => { %>
+    <button name='post' type='submit' value='<%= element %>'>
+        <%= element %>
+    </button>
+        <br> <br>
+    <% }); %>
+    </form>
 </main>
 </body>
 </html>
