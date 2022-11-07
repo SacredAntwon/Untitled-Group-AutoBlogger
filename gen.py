@@ -5,6 +5,7 @@ from pytz import timezone
 import pytz
 import shutil
 import os
+import names
 
 from essential_generators import DocumentGenerator
 from simple_image_download import simple_image_download as simp
@@ -29,14 +30,19 @@ for i in range(7):
 response = simp.simple_image_download()
 image = response.urls(word, limit=10)[-1]
 
+imageHeight = random.randint(290, 405)
+imageWidth = random.randint(290, 405)
+
 data = {
     "date": str(fullDate.strftime("%m/%d/%Y")),
     "time": str(time),
     "article": str(article),
     "title": str(title),
-    "author": str(gen.name()),
+    "author": str(names.get_full_name()),
     "email": str(gen.email()),
-    "image": image
+    "image": image,
+    "imageHeight": imageHeight,
+    "imageWidth": imageWidth
 }
 
 with open(f"archive/article_{date}.json", "w") as outfile:

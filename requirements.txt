@@ -2,6 +2,7 @@ certifi==2022.9.24
 charset-normalizer==2.1.1
 essential-generators==1.0
 idna==3.4
+names==0.3.0
 pytz==2022.6
 requests==2.28.1
 simple-image-download==0.2
