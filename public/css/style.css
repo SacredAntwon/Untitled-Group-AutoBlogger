@@ -30,6 +30,15 @@ h3 {
     font-size: 20px;
 }
 
+h4 {
+    color: darkslateblue;
+    text-align: center;
+    font-family: 'Nunito', serif;
+    font-weight: 600;
+    font-size: 20px;
+    height: 0px;
+}
+
 p {
     font-family: verdana, serif;
     font-size: 20px;
@@ -75,4 +84,41 @@ p {
   border: 2px solid darkslateblue ;
   background-color: black;
   color: white;
+}
+
+.rate {
+
+    width: 54.25%;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#c6bebe;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
 }
