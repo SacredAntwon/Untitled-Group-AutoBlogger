@@ -85,12 +85,14 @@ p {
   background-color: black;
   color: white;
 }
-
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .rate {
-
-    width: 54.25%;
-    height: 46px;
-    padding: 0 10px;
+  float:right;
+  height: 46px;
 }
 .rate:not(:checked) > input {
     position:absolute;
