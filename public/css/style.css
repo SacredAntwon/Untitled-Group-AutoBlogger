@@ -89,6 +89,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
 }
 .rate {
   float:right;
