@@ -12,13 +12,20 @@ from simple_image_download import simple_image_download as simp
 
 gen = DocumentGenerator()
 
-def getDateAndTime():
-    date_time = datetime.now()
-    my_timezone=timezone('US/Pacific')
-    fullDate = my_timezone.localize(date_time)
-    fullDate = fullDate.astimezone(my_timezone)
-    date = fullDate.strftime("%m_%d_%Y")
-    time = fullDate.strftime("%H:%M")
+# This function will get the current date and time
+def getDateAndTime(current = True):
+    if current == True:
+        dateTime = datetime.now()
+        myTimezonezone=timezone('US/Pacific')
+        fullDate = myTimezonezone.localize(dateTime)
+        fullDate = fullDate.astimezone(myTimezonezone)
+        date = fullDate.strftime("%m_%d_%Y")
+        time = fullDate.strftime("%H:%M")
+
+    else:
+        date = "01_01_2000"
+        fullDate = "01/01/2000"
+        time = "00:00"
 
     return date,fullDate,time
 
@@ -54,7 +61,8 @@ def generateArticle():
 
 def writeToJson():
     data, date = generateArticle()
-    with open(f"archive/article_{date}.json", "w") as outfile:
+    fileName = f"../archive/article_{date}.json"
+    with open(fileName, "w") as outfile:
         json.dump(data, outfile)
 
-writeToJson()
+    return fileName
