@@ -8,7 +8,7 @@ export function checkArticle() {
     let formatDate = date.format(today, 'MM_DD_YYYY'),
         path = `./archive/article_${formatDate}.json`;
     if (!fs.existsSync(path)) {
-        PythonShell.run("gen.py", null, function () {
+        PythonShell.run("main.py", null, function () {
             console.log("Generated Article");
         });
     }
