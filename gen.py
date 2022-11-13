@@ -59,9 +59,9 @@ def generateArticle():
 
     return data, date
 
-def writeToJson():
+def writeToJson(file="archive/article_"):
     data, date = generateArticle()
-    fileName = f"../archive/article_{date}.json"
+    fileName = f"{file}{date}.json"
     with open(fileName, "w") as outfile:
         json.dump(data, outfile)
 

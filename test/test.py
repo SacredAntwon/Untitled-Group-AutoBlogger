@@ -20,7 +20,7 @@ class TestStringMethods(unittest.TestCase):
     def testFile(self):
         print("Testing to see if the file "
         "exists after generating the article.")
-        fileName = gen.writeToJson()
+        fileName = gen.writeToJson("../archive/article_")
         path = pl.Path(fileName)
         self.assertEqual((str(path), path.is_file()), (str(path), True))
 
