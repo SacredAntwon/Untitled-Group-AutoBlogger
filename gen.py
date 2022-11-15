@@ -1,3 +1,10 @@
+# gen.py, by Anthony Maida and Daniel VanDenEykel
+#
+# This Python script contains all the generation code for articles.
+# We were able to accomplish this simple article generation with the help of
+# essential_generators and simple_image_download, then we would parse some
+# data into a JSON file that can be read by NodeJS.
+
 from datetime import datetime
 import json
 import random

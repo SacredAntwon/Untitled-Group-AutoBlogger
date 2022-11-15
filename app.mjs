@@ -1,3 +1,10 @@
+// app.mjs, by Anthony Maida and Daniel VanDenEykel
+//
+// This code is the entry-point to the website launcher.
+// It will load all the needed libraries first, then set the port,
+// and lastly include the css and img directories.
+// From here, router.mjs and archive.mjs will load.
+
 import express from "express";
 import path from "path";
 import {fileURLToPath} from 'url';

@@ -1,6 +1,12 @@
+// router.mjs, by Anthony Maida and Daniel VanDenEykel
+//
+// It will enter checkArticle() and getBlogPost()
+
 import {checkArticle, getBlogPost} from "./genPytoJs.mjs";
 import express from "express";
 
+// This function runs when the router starts or when an article loads.
+// It will first check if the json data exists based on the archive date.
 export default function startRouter() {
   const router = express.Router();
   checkArticle();
