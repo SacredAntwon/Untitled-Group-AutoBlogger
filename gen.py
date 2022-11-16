@@ -1,5 +1,8 @@
-# gen.py, by Anthony Maida and Daniel VanDenEykel
+# Licensing: Apache 2.0
+# Authors: Anthony Maida, Daniel VanDenEykel
+# Contact: amaida@csu.fullerton.edu, d.vandeneykel@csu.fullerton.edu
 #
+# gen.py
 # This Python script contains all the generation code for articles.
 # We were able to accomplish this simple article generation with the help of
 # essential_generators and simple_image_download, then we would parse some

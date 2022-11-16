@@ -1,5 +1,8 @@
-// app.mjs, by Anthony Maida and Daniel VanDenEykel
+// Licensing: Apache 2.0
+// Authors: Anthony Maida, Daniel VanDenEykel
+// Contact: amaida@csu.fullerton.edu, d.vandeneykel@csu.fullerton.edu
 //
+// app.mjs
 // This code is the entry-point to the website launcher.
 // It will load all the needed libraries first, then set the port,
 // and lastly include the css and img directories.

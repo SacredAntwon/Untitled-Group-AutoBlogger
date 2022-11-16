@@ -1,5 +1,8 @@
-// router.mjs, by Anthony Maida and Daniel VanDenEykel
+// Licensing: Apache 2.0
+// Authors: Anthony Maida, Daniel VanDenEykel
+// Contact: amaida@csu.fullerton.edu, d.vandeneykel@csu.fullerton.edu
 //
+// router.mjs
 // It will enter checkArticle() and getBlogPost()
 
 import {checkArticle, getBlogPost} from "./genPytoJs.mjs";
@@ -25,7 +28,7 @@ export default function startRouter() {
 
     // Get the blog post information
     let blogInfo = getBlogPost(jsonData);
-    
+
     console.log("Start page");
     res.render("index", { blog : blogInfo, picture : blogInfo.image });
   });

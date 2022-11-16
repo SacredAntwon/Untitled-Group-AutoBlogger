@@ -1,5 +1,8 @@
-# test.py, by Anthony Maida and Daniel VanDenEykel
+# Licensing: Apache 2.0
+# Authors: Anthony Maida, Daniel VanDenEykel
+# Contact: amaida@csu.fullerton.edu, d.vandeneykel@csu.fullerton.edu
 #
+# test.py
 # This is the unit testing program.
 
 import unittest

@@ -1,5 +1,10 @@
-// archive.mjs, by Anthony Maida and Daniel VanDenEykel
+// Licensing: Apache 2.0
+// Authors: Anthony Maida, Daniel VanDenEykel
+// Contact: amaida@csu.fullerton.edu, d.vandeneykel@csu.fullerton.edu
 //
+// archive.mjs
+// The purpose of this file is to real the archive folder
+// and send it to the html page.
 
 import express from "express";
 import fs from "fs";
