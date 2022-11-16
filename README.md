@@ -28,6 +28,3 @@ There will be an archive section where all the past blogs will be saved and orde
 5. A new blog could be generated for the same date by running `python3 main.py` in the command line.
 
 6. The tests could be run by opening the `test` folder in the terminal and running `python3 test.py`.
-
-7. 
-8. 
