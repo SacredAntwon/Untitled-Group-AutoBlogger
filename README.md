@@ -16,6 +16,22 @@ We are using python and many libraries to generate the blog and gather images. N
 
 There will be an archive section where all the past blogs will be saved and ordered by their date. Clicking on a blog in an archive will display that blog in the same layout as the normal blog post.
 
+npm_requirements.txt include all the libraries for the JavaScript portion.
+requirements.txt include all the libraries for the Python portion
+
+main.py is the driver code for our python portion. It will call gen.py.
+gen.py will generate a blog with all the required information and save it to the archive folder.
+test/test.py is our unit testing.
+
+app.mjs is the driver code for our JavaScript portion and setting up the website.
+genPytoJs.mjs will check if there is a blog for the current date and generate one if there isn't.
+archive.mjs is the JavaScript portion dealing with the archive page of the website.
+router.mjs is the JavaScript portion dealing with the homepage of the website.
+
+The views folder contains the html for both the homepage and archive page.
+public/css/style.css is the style sheet used in our html.
+
+
 ## Getting Started
 1. Node JS needs to be installed (https://nodejs.org/en/).
 
