@@ -21,6 +21,13 @@ There will be an archive section where all the past blogs will be saved and orde
 
 2. There are two text files, `npm_requirements.txt` for Node JS and `requirements.txt` for python. These include all libraries required to run the website and generator.
 
-3. There are two methods to start the website. First option that will require no changes to the json is `node app.mjs`. The other method is to do `npm start` in the terminal if you have `"start": "node app.mjs"` in the `package.json` file under the `"scripts"`.
+3. There are two methods to start the website. First option that will require no changes to the json is `node app.mjs`. The other method is to do `npm start` in the terminal if you have `"start": "node app.mjs"` in the `package.json` file under the `"scripts"`. It is recommended to do the first option, since no modification is required
 
 4. Search `localhost:3000` on the browser to bring up the website.
+
+5. A new blog could be generated for the same date by running `python3 main.py` in the command line.
+
+6. The tests could be run by opening the `test` folder in the terminal and running `python3 test.py`.
+
+7. 
+8. 
