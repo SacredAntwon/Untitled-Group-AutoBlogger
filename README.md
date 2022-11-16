@@ -12,7 +12,7 @@ Daniel VanDenEykel
 d.vandeneykel@csu.fullerton.edu
 
 ## Information
-We are using python and many libraries to generate the blog and gather images. Node JS and express is used to build the website. The JavaScript code will check what the current day is, and if there is no blog with the current date, it will call the `gen.py` to create a new blog. If you would like to test the generatation of the blog, run `python3 gen.py`. `pip install -r requirements.txt`(if pip does not work, try using pip3) could be used to install the python libraries.
+We are using python and many libraries to generate the blog and gather images. Node JS and express is used to build the website. The JavaScript code will check what the current day is, and if there is no blog with the current date, it will call the `gen.py` to create a new blog. If you would like to test the generation of the blog, run `python3 gen.py`. `pip install -r requirements.txt`(if pip does not work, try using pip3) could be used to install the python libraries.
 
 There will be an archive section where all the past blogs will be saved and ordered by their date. Clicking on a blog in an archive will display that blog in the same layout as the normal blog post.
 
