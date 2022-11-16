@@ -1,4 +1,11 @@
-// genPytoJs.mjs, by Anthony Maida and Daniel VanDenEykel
+// Licensing: Apache 2.0
+// Authors: Anthony Maida, Daniel VanDenEykel
+// Contact: amaida@csu.fullerton.edu, d.vandeneykel@csu.fullerton.edu
+//
+// genPytoJs.mjs
+// The purpose of this file is to check if there is no blog with the
+// current day, and a function to read the json file from the archive
+// folder.
 //
 
 import fs from 'fs';
