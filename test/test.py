@@ -1,3 +1,7 @@
+# test.py, by Anthony Maida and Daniel VanDenEykel
+#
+# This is the unit testing program.
+
 import unittest
 import os
 import sys
